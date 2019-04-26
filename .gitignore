@@ -39,3 +39,7 @@ test/tests.bundle*
 dist/**/*.js.map
 
 dist
+
+# Cypress output
+cypress/videos
+cypress/screenshots
