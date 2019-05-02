@@ -6,9 +6,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const WebpackPwaManifest = require('webpack-pwa-manifest')
 const OfflinePlugin = require('offline-plugin')
+const babelEnvDeps = require('webpack-babel-env-deps')
 
 const config = {
-  entry: ['babel-polyfill', './src/index.js'],
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.join(__dirname, 'dist'),
     publicPath: './',
@@ -34,7 +35,7 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: [babelEnvDeps.exclude()],
         use: ['babel-loader']
       },
       {
