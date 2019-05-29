@@ -1,7 +1,7 @@
 {
-  "name": "orbit-web",
+  "name": "thestate-web",
   "version": "1.0.0-alpha-1",
-  "description": "Orbit Chat",
+  "description": "TheState Chat",
   "main": "src/components/index.js",
   "scripts": {
     "dev": "./node_modules/.bin/webpack-dev-server --mode=development",
@@ -19,18 +19,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/orbitdb/orbit-web.git"
+    "url": "git+https://github.com/vokezofficial/thestate-web.git"
   },
   "keywords": [
     "orbitdb",
     "orbit",
-    "orbit-web"
+    "orbit-web",
+    "thestatedb",
+    "thestate",
+    "thestate-web"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/orbitdb/orbit-web/issues"
+    "url": "https://github.com/vokezofficial/thestate-web/issues"
   },
-  "homepage": "https://github.com/orbitdb/orbit-web#readme",
+  "homepage": "https://github.com/vokezofficial/thestate-web#readme",
   "browserslist": [
     "> 0.5%",
     "last 2 versions",
